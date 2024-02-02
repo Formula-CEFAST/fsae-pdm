@@ -1,0 +1,102 @@
+# Arquivos ignorados pelo controle de versão GIT.
+*.vcxproj*
+*.cache*
+*.launch
+*compile_flags*
+*compile_commands*
+
+# Tags file
+tags
+
+# Raw sections that go into the flash.
+ExtractedFlashSections
+*.gdb
+
+### Arquivos da pasta debug e da pasta release
+ReleaseSymbol/
+Debug/
+Release/
+build/
+.settings/
+.vscode/
+
+### C ###
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.bin
+*.elf
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Não queremos enviar a build do simulador.
+TouchGFX/build/
+
+# Exceções para o TouchGFX.
+
+# Queremos as ferramentas (executáveis) que vem com ele.
+!fontconvert.out
+!imageconvert.out
+!textconvert/**
+
+# Biblioteca DSP
+!libarm*.a
+
+# Biblioteca do TouchGFX.
+!libtouchgfx*.a
+
+# Arquivos para emulador.
+!libSDL2*.dll
+!libpng16*.dll
+!zlib1.dll
+!*SDL2*.lib
+!*SDL2*.a
+!dll2lib.bat
+!libtouchgfx*.lib
